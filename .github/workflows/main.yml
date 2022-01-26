@@ -29,7 +29,8 @@ jobs:
       - name: Run a one-line script
         env:
           api_key: ${{ secrets.APIKEY }}
-        run: echo $api_key
+          params: 56778
+        run: echo $api_key, $params
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
