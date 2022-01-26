@@ -27,8 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-	env:
-	  api_key: ${{ secrets.APIKEY }}
+        env:
+	        api_key: ${{ secrets.APIKEY }}
         run: echo $api_key
 
       # Runs a set of commands using the runners shell
